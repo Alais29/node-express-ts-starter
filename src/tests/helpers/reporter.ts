@@ -6,7 +6,7 @@ import {
 import SuiteInfo = jasmine.SuiteInfo;
 
 class CustomProcessor extends DisplayProcessor {
-  public displayJasmineStarted(info: SuiteInfo, log: string): string {
+  public static displayJasmineStarted(_info: SuiteInfo, log: string): string {
     return `${log}`;
   }
 }
